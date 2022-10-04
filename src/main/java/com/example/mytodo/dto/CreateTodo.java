@@ -9,8 +9,9 @@ import javax.persistence.Column;
 @AllArgsConstructor
 @ToString
 public class CreateTodoDto {
-
+    
     private String title;
+    private Boolean completed;
 
     public Todo toEntity() {
         return new Todo(null, title, false);
